@@ -1,0 +1,7 @@
+{% extends 'base.html' %}
+{% block content %}
+<h1>Covid Data</h1>
+<h3>Confirmed: {{resp.confirmed}}</h3>
+<h3>Deaths: {{resp.deaths}}</h3>
+<h3>Last Updated: {{dateUpdated}} at {{timeUpdated}}</h3>
+{% endblock content %}
