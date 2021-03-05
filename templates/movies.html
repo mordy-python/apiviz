@@ -2,11 +2,12 @@
 {% block content %}
     <h1 class="w3-center">Most Popular TV Shows</h1>
     {% for result in res %}
-        <div class="w3-card w3-padding movie-card">
-            <h3 class="w3-yellow w3-padding">Title: {{result['title']}}</h3>
-            <h5 class="w3-pale-yellow w3-padding">Score: {{result['tomatoScore']}}</h5>
-            <h5 class="w3-yellow w3-padding">View on <a href="https://rottentomatoes.com{{result['url']}}">Rotten Tomatoes</a></h5>
-        </div>
+    <div class="w3-card w3-padding movie-card">
+        <h3 class="w3-yellow w3-padding">Title: {{result['title']}}</h3>
+        <h5 class="w3-pale-yellow w3-padding">Score: {{result['tomatoScore']}}</h5>
+        <h5 class="w3-yellow w3-padding">View on <a href="https://rottentomatoes.com{{result['url']}}">Rotten Tomatoes</a>
+        </h5>
+    </div>
     {% endfor %}
     <div class="w3-margin"></div>
 {% endblock content %}
