@@ -6,6 +6,7 @@ app = Flask(__name__)
 @app.route('/')
 def index():
     return render_template('index.html')
+
 @app.route('/apis/covid')
 def covidAPI():
     resp = covid.get_covid_data()
