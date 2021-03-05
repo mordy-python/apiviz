@@ -9,11 +9,8 @@ def index():
 
 @app.route('/apis/covid')
 def covidAPI():
-    resp = covid.get_covid_data()
-    dateUpdated, timeUpdated = resp['lastUpdate'].split('T')
-    timeUpdated, plus = timeUpdated.split('+')
-    del(plus) # delete the plus variable
-    return render_template("index.html", resp=resp, dateUpdated=dateUpdated, timeUpdated=timeUpdated)
+    resp = covid.get_covid()
+    return render_template("covid.html", resp=resp)
 
 
 if __name__ == '__main__':
