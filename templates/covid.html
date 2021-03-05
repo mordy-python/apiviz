@@ -1,7 +1,65 @@
 {% extends 'base.html' %}
 {% block content %}
-<h1>Covid Data</h1>
-<h3>Confirmed: {{resp.confirmed}}</h3>
-<h3>Deaths: {{resp.deaths}}</h3>
-<h3>Last Updated: {{dateUpdated}} at {{timeUpdated}}</h3>
+<h1 class="w3-center w3-text-yellow">Health API</h1>
+<div class="virus-data w3-card w3-padding">
+    <h3 class="w3-padding w3-yellow w3-center">Covid Data</h3>
+    <table class="w3-table">
+        <tr>
+            <th>Age Group</th>
+            <th>Virus</th>
+            <th>Deaths</th>
+        </tr>
+        <tr class="w3-pale-yellow">
+            <td>All Ages</td>
+            <td>Covid</td>
+            <td>{{resp[0]}}</td>
+        </tr>
+
+        <tr>
+            <td>0 to 17</td>
+            <td>Covid</td>
+            <td>{{resp[2]}}</td>
+        </tr>
+        <tr class="w3-pale-yellow">
+            <td>18 to 64</td>
+            <td>Covid</td>
+            <td>{{resp[4]}}</td>
+        </tr>
+        <tr>
+            <td>65+</td>
+            <td>Covid</td>
+            <td>{{resp[6]}}</td>
+        </tr>
+    </table>
+</div>
+<div class="virus-data w3-card w3-padding">
+    <h3 class="w3-padding w3-yellow w3-center">Pneumonia Data</h3>
+    <table class="w3-table">
+        <tr>
+            <th>Age Group</th>
+            <th>Virus</th>
+            <th>Deaths</th>
+        </tr>
+        <tr class="w3-pale-yellow">
+            <td>All Ages</td>
+            <td>Pneumonia</td>
+            <td>{{resp[1]}}</td>
+        </tr>
+        <tr>
+            <td>0 to 17</td>
+            <td>Pneumonia</td>
+            <td>{{resp[3]}}</td>
+        </tr>
+        <tr class="w3-pale-yellow">
+            <td>18 to 64</td>
+            <td>Pneumonia</td>
+            <td>{{resp[5]}}</td>
+        </tr>
+        <tr>
+            <td>65+</td>
+            <td>Pneumonia</td>
+            <td>{{resp[7]}}</td>
+        </tr>
+    </table>
+</div>
 {% endblock content %}
