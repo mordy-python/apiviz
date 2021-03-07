@@ -1,6 +1,5 @@
 from flask import Flask, render_template
-import covid
-import movies
+from APIvis import covid, movies
 
 app = Flask(__name__)
 
