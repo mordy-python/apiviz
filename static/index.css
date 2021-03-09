@@ -29,13 +29,13 @@
   }
 
   #subhead{
-    margin-top:300px;
+    margin-top: 15%;
    }
 
-   h2{
+  h2{
      text-align: center;
-   }
+  }
 
-button{
-  color:red;
-   }
+  .buttons{
+    font-size: 20px;
+  }
