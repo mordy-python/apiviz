@@ -12,7 +12,7 @@ def index():
 
 @app.route('/apis/covid')
 def covidAPI():
-    resp = covid.get_covid()
+    resp = covid.get_covid_data()
     return render_template("covid.html", resp=resp)
 
 
@@ -25,4 +25,4 @@ def moviesAPI():
 
 
 if __name__ == '__main__':
-    app.run(host='0.0.0.0', debug=True)
+    app.run(debug=True)
