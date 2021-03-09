@@ -1,6 +1,11 @@
 .virus-data{
-    width: 49%;
-    display: inline-block;
+    width: 75%;
+    display: inline;
+}
+.graph{
+    width: 75%;
+    height: 75%;
+    display: inline;
 }
 .movie-card{
     width: 32%;
