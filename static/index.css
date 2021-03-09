@@ -27,3 +27,15 @@
     from, to { border-color: transparent }
     50% { border-color: orange; }
   }
+
+  #subhead{
+    margin-top:300px;
+   }
+
+   h2{
+     text-align: center;
+   }
+
+button{
+  color:red;
+   }
