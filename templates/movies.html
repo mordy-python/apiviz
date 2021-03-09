@@ -5,8 +5,9 @@
     <div class="w3-card w3-padding movie-card">
         <h3 class="w3-yellow w3-padding">Title: {{result['title']}}</h3>
         <h5 class="w3-pale-yellow w3-padding">Score: {{result['tomatoScore']}}</h5>
-        <h5 class="w3-yellow w3-padding">View on <a href="https://rottentomatoes.com{{result['url']}}">Rotten Tomatoes</a>
+        <h5 class="w3-yellow w3-padding inline">View on <a href="https://rottentomatoes.com{{result['url']}}">Rotten Tomatoes</a>
         </h5>
+        <img src="{{result['posters']['primary']}}" alt="Movie Poster" class="">
     </div>
     {% endfor %}
     <div class="w3-margin"></div>
