@@ -2,9 +2,9 @@
 ## categories inclue
 - Entertainment
     - NBA stats
-    - Rotten Tomatoes
+    - Rotten Tomatoes - Done
 - Health
-    - COVID charts
+    - COVID charts - Done
     - flu charts if possible
 - Stackexchange
 - NY times
