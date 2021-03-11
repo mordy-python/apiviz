@@ -14,8 +14,11 @@
 
 <body>
     <div class="w3-container header w3-bar w3-yellow">
-        <button class="w3-bar-item w3-large w3-button w3-hover-orange">Home</button>
+        <a href="{{ url_for('index') }}"><button
+                class="w3-bar-item w3-large w3-button w3-hover-orange">Home</button></a>
         <a href="{{ url_for('covidAPI') }}"><button class="w3-bar-item w3-large w3-button w3-hover-orange">Health
+                API</button></a>
+        <a href="{{ url_for('moviesHome') }}"><button class="w3-bar-item w3-large w3-button w3-hover-orange">Movies
                 API</button></a>
         <button class="w3-bar-item w3-large w3-button w3-hover-orange">About Us</button>
         <button class="w3-bar-item w3-large w3-button w3-hover-orange">Contact Us</button>

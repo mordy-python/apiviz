@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+{% block content %}
+We gotta make this page to point to the movies page with a category for example such as
+<ul>
+    <li><code>url_for('moviesAPI', category=action)</code> </li>
+    <li><code>url_for('moviesAPI', category=comedy)</code> </li>
+</ul>
+and so on <br>
+for now to see a movie page go to <code>{{ url_for('moviesAPI', category='action') }}</code><br>
+or <code>{{ url_for('moviesAPI', category='genre') }}</code> and so on
+{% endblock content %}
