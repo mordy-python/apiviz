@@ -42,13 +42,3 @@ h2{
   margin-top:15%;
   font-size: 20px;
 }
-.music-cat{
-  position: relative;
-  right:40%;
-}
-#music-sub{
-  position: absolute;
-  bottom:20%;
-  left:8%;
-  font-size: 35px;
-}
