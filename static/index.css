@@ -3,7 +3,8 @@
   margin: auto;
 }
 #spacing{
- margin-top:100px;
+ margin-top:10%;
+ color: #A44200;
 }
 .typewriter h1 {
     overflow: hidden; /* Ensures the content is not revealed until the animation */
@@ -30,12 +31,14 @@
 
   #subhead{
     margin-top: 15%;
+    color: #A44200;
    }
 
   h2{
      text-align: center;
   }
 
-  .buttons{
+  .main-btn{
+    margin-top:15%;
     font-size: 20px;
   }
