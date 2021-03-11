@@ -1,6 +1,7 @@
 {% extends "base.html" %}
 {% block content %}
 <link rel="stylesheet" href="{{ url_for('static', filename='index.css') }}">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 
 <div class="w3-container">
   <div class="typewriter ">
@@ -15,7 +16,9 @@
   <button class="main-btn w3-btn w3-round-large w3-yellow w3-margin-right">Explore API's</button>
   <button class="main-btn w3-btn w3-round-large w3-yellow w3-margin-left">Feedback</button>
 </div>
+
 <div class="w3-container">
-  <img class="music" src="{{url_for('static', filename='music.jpg')}}" />
+  <img class="music-cat w3-margin-top" src="{{url_for('static', filename='music.jpg')}}" align="left"/>
+  <h4 id="music-sub">Music API's</h4>
 </div>
 {% endblock content %}

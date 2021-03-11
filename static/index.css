@@ -29,16 +29,26 @@
     50% { border-color: orange; }
   }
 
-  #subhead{
-    margin-top: 15%;
-    color: #A44200;
-   }
+#subhead{
+  margin-top: 15%;
+  color: #A44200;
+}
 
-  h2{
-     text-align: center;
-  }
+h2{
+ text-align: center;
+}
 
-  .main-btn{
-    margin-top:15%;
-    font-size: 20px;
-  }
+.main-btn{
+  margin-top:15%;
+  font-size: 20px;
+}
+.music-cat{
+  position: relative;
+  right:40%;
+}
+#music-sub{
+  position: absolute;
+  bottom:20%;
+  left:8%;
+  font-size: 35px;
+}
